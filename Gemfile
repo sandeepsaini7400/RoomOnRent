@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+gem "pg"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -71,6 +71,11 @@ group :test do
   gem "webdrivers"
 end
 
+#jsbundling gem is user for javascript
 gem 'jsbundling-rails' 
- 
+
+#cssbundling gem is used for css and bootstrap
 gem 'cssbundling-rails'
+
+#bootstrap_form is used for bootstrap form 
+gem "bootstrap_form", "~> 5.1"

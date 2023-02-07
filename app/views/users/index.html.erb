@@ -1,6 +1,28 @@
+<div class="container">
+  <div class="card">
+    <h1 class="d-flex justify-content-center">User </h1>
+    <div class="border">
 
-<h1>Users index</h1>
-<div class= "btn btn-primary"> 
-Find me 
+      <table class="table table-bordered table-striped">
+        <thead class="">
+          <tr>
+            <th scope="col">First name</th>
+            <th scope="col">last name</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <% @users.each do |user| %>
+            <tr>
+              <td>
+                <%= link_to user.first_name,user %> 
+              </td>
+              <td>
+                <%= user.last_name %>
+              </td>
+            </tr>
+              <% end %> 
+        </tbody>
+      </table>
+  </div>
 </div>
-

@@ -1,42 +1,45 @@
-<%= bootstrap_form_with model: @user do |form| %>
-  <div class="container ">
-    <div class="row border p-1 m-4 mt-4">
-      <div class=" " style= "width: 30%;" "margin-left: 200px;">
-        <%= form.text_field :first_name %><br>
-      </div>
-      <div style= "width: 30%;">
-        <%= form.text_field :last_name %><br>
-      </div>
-      <div style= "width: 50%;">
-        <%= form.select :gender, ["Male", "Female", "Other"] %><br>
-      </div>
-      <div>
-        <%= form.telephone_field :contact_no  %><br>
-      </div>
-      <div>
-        <%= form.text_field :occupation %><br>
-      </div>
-      <div>
-        <%= form.text_field :address  %><br>
-      </div>
-      <div>
-        <%= form.text_field :city  %><br>
-      </div>
-      <div>
-        <%= form.number_field :pin_code  %><br> 
-      </div>
-      <div>
-        <%= form.text_field :state %><br>
-      </div>
-      <div>
-        <%= form.date_field :dob  %><br>
-      </div>
-      <div> 
-        <%= form.select :marital_status, ["Single", "Maried"] %>
-      </div>
-      <div>
-        <%= form.submit %>
-      </div>
-    </div>
-  </div>
-<% end %> 
+<%= bootstrap_form_with model: user do |form| %>
+	<div class="container">
+	<div class >
+		<%= form.text_field :first_name %>
+	</div>
+	<div class >
+		<%= form.text_field :last_name %>
+	</div>
+	<div class >
+		<%= form.select :gender, ["Male","female","Other"] %>
+	</div>
+	<div class >
+		<%= form.text_field :contact_no %>
+	</div>
+	<div class >
+		<%= form.text_field :age %>
+	</div>
+	<div class >
+		<%= form.text_field :occupation %>
+	</div>
+	<div class >
+		<%= form.text_field :address %>
+	</div>
+	<div class >
+		<%= form.text_field :city %>
+	</div>
+	<div class >
+		<%= form.number_field :pin_code %>
+	</div>
+	<div class >
+		<%= form.text_field :state %>
+	</div>
+	<div class >
+		<%= form.date_field :dob %>
+	</div>
+	<div class >
+		<%= form.select :marital_status , ["Married", "Single" ] ,selected: "Single"%>
+	</div>
+
+	<div>
+		<%= form.submit %>
+	</div>
+	</div>
+	<% end %>
+
